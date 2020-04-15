@@ -34,5 +34,11 @@ Route::group([
     Route::get('/edit/{id}', function () {
         return view('admin.edit');
     })->name('adminEdit');
-
 });
+
+Route::get('/about', function () {
+    return view('other.about');
+})->name('otherAbout');
+
+
+
